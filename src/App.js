@@ -28,12 +28,12 @@ function App() {
                 </div>
               </div>
               <div className=' d-flex align-items-center gap_10 pt-3'>
-                <img src={count_1} alt="conunt" />
-                <img src={count_2} alt="conunt" />
-                <img src={count_3} alt="conunt" />
-                <img src={count_4} alt="conunt" />
+                <img src={count_1} alt="conunt" className=' curser position-relative z-3' />
+                <img src={count_2} alt="conunt" className=' curser position-relative z-3' />
+                <img src={count_3} alt="conunt" className=' curser position-relative z-3' />
+                <img src={count_4} alt="conunt" className=' curser position-relative z-3' />
               </div>
-              <button className='bttn w-100 mt-4 ff-sans fw-bold fs-16 lh-24'>Buy Now</button>
+              <button className='bttn w-100 mt-4 ff-sans fw-bold fs-16 lh-24 position-relative z-3'>Buy Now</button>
             </div>
           </div>
           <div className=' col-lg-6'>

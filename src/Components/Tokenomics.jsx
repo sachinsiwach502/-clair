@@ -66,8 +66,8 @@ function Tokenomics() {
                         </span>
                     </div>
                     <div className=' d-flex flex-column'>
-                        <h1 className=' ff-sans fw-semibold text-white fs-20 lh-30 mb-0'>Baby Sinclair Stands Strong with the Shiba Inu Community</h1>
-                        <p className=' mb-0 ff-sans black-300 fs-16 lh-24 fw-normal'>10% of every $CLAIR token sold post-presale will be dedicated to burning SHIB.</p>
+                        <h1 className=' ff-sans fw-semibold text-white fs-20 lh-30 mb-0 pb-1'>Baby Sinclair Stands Strong with the Shiba Inu Community</h1>
+                        <p className=' mb-0 ff-sans black-300 fs-16 lh-24 fw-normal pt-2'>10% of every $CLAIR token sold post-presale will be dedicated to burning SHIB.</p>
                     </div >
                 </div>
             </div>

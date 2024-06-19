@@ -486,6 +486,13 @@
   padding-top: 32px;
 }
 
+.adress_bg_img {
+  background-image: url("./assets/img/png/adress_bg_img.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /*================ tokenomics ================*/
 .container_1140 {
   max-width: 1140px;
@@ -579,4 +586,77 @@
 
 .copy_input::placeholder {
   color: var(--black-300);
+}
+
+.lock_img {
+  padding: 128px 189px 84px 229px;
+}
+
+.w-245 {
+  width: 245px;
+}
+
+.h-245 {
+  height: 245px;
+}
+
+.yellowUnderline {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 1px;
+  opacity: 30%;
+  margin-top: 83px;
+}
+
+.pt_61 {
+  padding-top: 61px;
+}
+
+.contaier_1080 {
+  max-width: 1080px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider_box {
+  background: #FFFFFF14;
+  border-radius: 16px;
+  position: relative;
+  padding: 40px 15px 40px 15px;
+}
+
+.slider_box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(150.17deg, rgba(255, 246, 36, 0.4) -60.4%, rgba(255, 246, 36, 0) 118.96%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.w-267 {
+  width: 267px;
+}
+
+.h-99 {
+  height: 99px;
+}
+
+.secure_bg_img {
+  background-image: url("../src/assets/img/png/secure_bg_img.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+.slider_box::-webkit-scrollbar {
+  display: none;
 }
