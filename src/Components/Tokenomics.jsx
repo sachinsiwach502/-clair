@@ -1,15 +1,15 @@
-import arrow_img from '../assets/img/png/tokenomics_arrow.png';
-import tokenomics_img from '../assets/img/png/tokenomics_img.png';
-import mouse_img from '../assets/img/png/mouse_img.png';
-import profile from '../assets/img/png/ajay_img.png';
-import plus from '../assets/img/png/plus_icon.png';
+import arrow_img from '../assets/img/png/tokenomics_arrow.webp';
+import tokenomics_img from '../assets/img/png/tokenomics_img.webp';
+import mouse_img from '../assets/img/png/mouse_img.webp';
+import profile from '../assets/img/png/ajay_img.webp';
+import plus from '../assets/img/png/plus_icon.webp';
 
 function Tokenomics() {
     return (
         <div className="container_1140">
             <div className="row justify-content-between align-items-center">
                 <div className=" col-lg-5">
-                    <h1 className=" mb-0 text-white fw-semibold fs-48 lh-56 ff-sans">Tokenomics</h1>
+                    <h1 className=" mb-0 text-white fw-semibold fs-48 lh-56 ff-sans fs-md-32 lh-md-37">Tokenomics</h1>
                     <div className=" d-flex align-items-center gap-3 pt-3">
                         <p className=" mb-0 black-300 fw-normal fs-24  lh-36 ff-sans">Baby Sinclair</p>
                         <button className="clair_btn fs-24 ff-sans fw-normal primary-color lh-35">$Clair</button>
@@ -52,8 +52,8 @@ function Tokenomics() {
                 </div>
 
             </div>
-            <div className='community-card mt_80'>
-                <div className=' d-flex align-items-center justify-content-center gap_75'>
+            <div className='community-card mt_lg_80 mt-md-5 mt-4'>
+                <div className=' d-flex align-items-center justify-content-center gap_75 gap-4 flex-wrap flex-lg-nowrap position-relative z-3'>
                     <div className=' d-flex align-items-center gap_20'>
                         <span className='img_card'>
                             <img src={mouse_img} alt="mouse" />
@@ -66,8 +66,8 @@ function Tokenomics() {
                         </span>
                     </div>
                     <div className=' d-flex flex-column'>
-                        <h1 className=' ff-sans fw-semibold text-white fs-20 lh-30 mb-0 pb-1'>Baby Sinclair Stands Strong with the Shiba Inu Community</h1>
-                        <p className=' mb-0 ff-sans black-300 fs-16 lh-24 fw-normal pt-2'>10% of every $CLAIR token sold post-presale will be dedicated to burning SHIB.</p>
+                        <h1 className=' ff-sans fw-semibold text-white fs-20 lh-30 mb-0 pb-1 text-center text-lg-start'>Baby Sinclair Stands Strong with the Shiba Inu Community</h1>
+                        <p className=' mb-0 ff-sans black-300 fs-16 lh-24 fw-normal pt-2 text-center text-lg-start'>10% of every $CLAIR token sold post-presale will be dedicated to burning SHIB.</p>
                     </div >
                 </div>
             </div>
