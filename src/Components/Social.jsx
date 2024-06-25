@@ -5,7 +5,7 @@ import dino_ellips from '../assets/img/png/social_dino_ellips.png'
 
 function Social() {
     return (
-        <section id='#paper' className=' position-relative'>
+        <section id='#paper' className=' position-relative overflow-hidden'>
             <div className=' social_dino_ellips'>
                 <img src={dino_ellips} alt="dino_ellips" className=' w-100 max-w-284 h-100' />
             </div>

@@ -10,7 +10,7 @@ import slider_img_06 from '../assets/img/png/slider_6.webp';
 
 function Secure() {
     return (
-        <section className=' secure_bg_img' id='aduit'>
+        <section className=' secure_bg_img overflow-hidden' id='aduit'>
             <img src={top_side_layer} alt="top side layer" className=' w-100' />
             <div className=' container_1140 pb_160 pt_177'>
                 <div className='row align-items-center justify-content-between'>

@@ -3,7 +3,7 @@ import bottom_side_layer from '../assets/img/png/bottom_side_layer.webp'
 function Adress() {
     return (
         <>
-            <section className='adress_bg_img'>
+            <section className='adress_bg_img overflow-hidden'>
                 <span className='w-100'> <img src={top_side_layer} alt="layer" className='w-100' /></span>
                 <div className='container pt_152 pb_154'>
                     <h1 className=' fw-semibold fs-48 lh-56 ff-sans text-center text-white mb-0 fs-md-32 lh-md-37' data-aos="fade-left"> <span className=' fw-bold primary-color'>$CLAIR</span> Smart Contract Address</h1>

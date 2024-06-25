@@ -6,7 +6,7 @@ import plus from '../assets/img/png/plus_icon.webp';
 
 function Tokenomics() {
     return (
-        <div className="container_1140" id='tokenomics'>
+        <div className="container_1140 overflow-hidden" id='tokenomics'>
             <div className="row justify-content-between align-items-center">
                 <div className=" col-lg-5 d-lg-block d-flex align-items-center justify-content-center flex-column" data-aos="fade-up-right">
                     <h1 className=" mb-0 text-white fw-semibold fs-48 lh-56 ff-sans fs-md-32 lh-md-37">Tokenomics</h1>

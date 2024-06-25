@@ -29,7 +29,7 @@ function App() {
   return (
     <body className=' bg-black'>
       <Header />
-      <div className='countdown_container'>
+      <div className='countdown_container overflow-hidden'>
         <div className='row justify-content-between countDown_card mt-lg-5 mt-md-4 mt-2'>
           <div className=' col-md-5 d-md-block d-flex align-items-center justify-content-center' data-aos="fade-right">
             <div className='max-w-300 w-100'>
@@ -59,7 +59,7 @@ function App() {
       </div>
 
       {/*=============================== about =====================*/}
-      <section className='pt_100' id='about'>
+      <section className='pt_100 overflow-hidden' id='about'>
         <div className='container position-relative' data-aos="zoom-in">
           <div className='about_sec_ellips'>
             <img src={dino_ellifs} alt="ellips" className='w-100 max-w-284 h-100' />

@@ -3,7 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 function Faq() {
     return (
-        <section className="faq_bg_img pt_80 pb_lg_160 pb_sm_80 pb-5">
+        <section className="faq_bg_img pt_80 pb_lg_160 pb_sm_80 pb-5 overflow-hidden">
             <div className="container_800 pt_90 pb_lg_97 pb_sm_70 pb-5">
                 <h1 className=' text-center text-white fw-semibold fs-48 lh-56 lh-md-37 fs-md-32 ff-sans'>Frequently Asked <span className=' primary-color'>Questions </span> </h1>
 

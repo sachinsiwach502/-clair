@@ -1,6 +1,6 @@
 function Roadmap() {
     return (
-        <section className=" position-relative candleStickPattern pb_350 roadmap_bg_img pb-4" id="roadmap">
+        <section className=" position-relative candleStickPattern pb_350 roadmap_bg_img pb-4 overflow-hidden" id="roadmap">
             <div className=" container_1140">
                 <h1 className=" mb-0 ff-sans text-center text-white fw-semibold fs-48 lh-56">Roadmap</h1>
                 <div className=" row align-items-lg-start align-items-center justify-content-center justify-content-lg-start position-relative z-3 mt-5">
