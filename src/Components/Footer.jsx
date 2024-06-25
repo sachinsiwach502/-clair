@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <section className=" pt_152 pb_40">
+        <section className=" pt_lg_152 pt_sm_80 pt-5 pb_40">
             <div className=" container">
                 <div className="d-flex flex-column align-items-center justify-content-center">
                     <div className="max-w-626">

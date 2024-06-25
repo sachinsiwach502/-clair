@@ -27,19 +27,19 @@ function Header() {
                             <div className={`d-flex align-items-center gap_60 lg_view ${navIcon ? "show" : ""}`}>
                                 <ul className=' d-flex align-items-center gap_32 mb-0 d-max-lg-prop'>
                                     <li>
-                                        <a href="#" className=' ff-sans fw-medium black-300 fs-16 lh-24 nav_links'>About</a>
+                                        <a href="#about" className=' ff-sans fw-medium black-300 fs-16 lh-24 nav_links'>About</a>
                                     </li>
                                     <li>
-                                        <a href="#" className=' ff-sans fw-medium black-300 fs-16 lh-24 nav_links'>Tokenomics</a>
+                                        <a href="#tokenomics" className=' ff-sans fw-medium black-300 fs-16 lh-24 nav_links'>Tokenomics</a>
                                     </li>
                                     <li>
-                                        <a href="#" className=' ff-sans fw-medium black-300 fs-16 lh-24 nav_links'>Audit</a>
+                                        <a href="#aduit" className=' ff-sans fw-medium black-300 fs-16 lh-24 nav_links'>Audit</a>
                                     </li>
                                     <li>
-                                        <a href="#" className=' ff-sans fw-medium black-300 fs-16 lh-24 nav_links'>Roadmap</a>
+                                        <a href="#roadmap" className=' ff-sans fw-medium black-300 fs-16 lh-24 nav_links'>Roadmap</a>
                                     </li>
                                     <li>
-                                        <a href="#" className=' ff-sans fw-medium black-300 fs-16 lh-24 nav_links'>White Paper</a>
+                                        <a href="#paper" className=' ff-sans fw-medium black-300 fs-16 lh-24 nav_links'>White Paper</a>
                                     </li>
                                 </ul>
                                 <span className=' curser'><img src={dropdown_img} alt="hero sec" /></span>

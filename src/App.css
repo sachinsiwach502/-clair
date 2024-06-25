@@ -485,10 +485,12 @@
   max-width: 856px;
 }
 
-/*================== adress section =================*/
-.pt_152 {
-  padding-top: 152px;
+.max-w-491 {
+  max-width: 491px;
 }
+
+/*================== adress section =================*/
+
 
 .bg-brown {
   background-color: var(--brown-50);
@@ -506,6 +508,10 @@
   padding-top: 32px;
 }
 
+.copy_input::placeholder {
+  font-family: var(--ff-sans);
+}
+
 .adress_bg_img {
   background-image: url("./assets/img/png/adress_bg_img.webp");
   background-position: center;
@@ -516,6 +522,14 @@
 /*================ tokenomics ================*/
 .container_1140 {
   max-width: 1140px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container_950 {
+  max-width: 950px;
   padding-left: 12px;
   padding-right: 12px;
   margin-left: auto;
@@ -721,9 +735,7 @@
   opacity: 20%;
 }
 
-.pb_160 {
-  padding-bottom: 160px;
-}
+
 
 .pt_177 {
   padding-top: 177px;
@@ -764,7 +776,7 @@
 
 .accordion-button::after {
   content: "";
-  background-image: url("../src/assets/img/png/accodian_top_side_arrow.webp");
+  background-image: url("../src/assets/img/png/down_side-icon.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -773,7 +785,7 @@
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("../src/assets/img/png/accodian_top_side_arrow.webp");
+  background-image: url("../src/assets/img/png/down_side-icon.png");
   width: 16px;
   height: 9px;
 }
@@ -811,9 +823,7 @@
   padding-top: 90px;
 }
 
-.pb_97 {
-  padding-bottom: 97px;
-}
+
 
 .accordion-button:not(.collapsed) {
   -webkit-box-shadow: none !important;
@@ -896,6 +906,22 @@
   margin-top: 40px;
 }
 
+.about_sec_ellips {
+  position: absolute;
+  right: 15%;
+  top: 2%;
+}
+
+.max-w-284 {
+  max-width: 284px;
+}
+
+.social_dino_ellips {
+  position: absolute;
+  right: 7%;
+  top: -5%;
+}
+
 /*=========================== roadmap =====================*/
 .roadmap_bg_img {
   background-image: url("../src/assets/img/png/roadmap_bg_img.webp");
@@ -936,22 +962,6 @@
   mask-composite: exclude;
 }
 
-.phase_card::after {
-  position: absolute;
-  content: "";
-  background-image: url("../src/assets/img/png/roadmap_box_after_img.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  bottom: 0;
-  right: 50%;
-  width: 25px;
-  height: 70px;
-  -webkit-transform: translate(-0px, 60px);
-  -ms-transform: translate(-0px, 60px);
-  transform: translate(-0px, 60px);
-}
-
 .dots {
   width: 5px;
   height: 5px;
@@ -961,6 +971,10 @@
 
 .candleStickPattern {
   position: relative;
+}
+
+.max-w-776 {
+  max-width: 776px;
 }
 
 .candleStickPattern::after {
@@ -975,10 +989,17 @@
   background-position: center;
 }
 
-.pb_330 {
-  padding-bottom: 330px;
+.pt_152 {
+  padding-top: 152px;
 }
 
+.max-w-300 {
+  max-width: 300px;
+}
+
+.max-w-284 {
+  max-width: 284px;
+}
 
 
 .footer_links {
@@ -990,6 +1011,10 @@
 .footer_links:hover {
   -webkit-text-stroke: thin;
   color: var(--primary-color);
+}
+
+.pb_150 {
+  padding-bottom: 150px;
 }
 
 /* Media Quries */
@@ -1037,6 +1062,10 @@
   .w-lg-768 {
     width: 768px;
   }
+
+  .countDown_card {
+    padding: 30px;
+  }
 }
 
 @media (max-width:768px) {
@@ -1065,6 +1094,29 @@
   .w-sm-320 {
     width: 320px !important;
   }
+
+  .countDown_card {
+    padding: 15px;
+  }
+
+  .mt_16 {
+    margin-top: 16px;
+  }
+
+}
+
+@media (min-width:576px) {
+  .pt_sm_80 {
+    padding-top: 80px !important;
+  }
+
+  .pb_sm_80 {
+    padding-bottom: 80px !important;
+  }
+
+  .pb_sm_70 {
+    padding-bottom: 70px !important;
+  }
 }
 
 @media (min-width:992px) {
@@ -1086,5 +1138,37 @@
 
   .mt_80 {
     margin-top: 80px;
+  }
+
+  .phase_card::after {
+    position: absolute;
+    content: "";
+    background-image: url("../src/assets/img/png/roadmap_box_after_img.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 50%;
+    width: 25px;
+    height: 70px;
+    -webkit-transform: translate(-0px, 60px);
+    -ms-transform: translate(-0px, 60px);
+    transform: translate(-0px, 60px);
+  }
+
+  .pt_lg_152 {
+    padding-top: 152px !important;
+  }
+
+  .pb_lg_160 {
+    padding-bottom: 160px !important;
+  }
+
+  .pb_lg_97 {
+    padding-bottom: 97px !important;
+  }
+
+  .pb_350 {
+    padding-bottom: 350px !important;
   }
 }

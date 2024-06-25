@@ -1,10 +1,15 @@
 import discord from '../assets/img/svg/discord.svg'
 import telegram from '../assets/img/svg/telegram.svg'
 import twitter from '../assets/img/svg/twitter.svg'
+import dino_ellips from '../assets/img/png/social_dino_ellips.png'
+
 function Social() {
     return (
-        <section>
-            <div className="container_840">
+        <section id='#paper' className=' position-relative'>
+            <div className=' social_dino_ellips'>
+                <img src={dino_ellips} alt="dino_ellips" className=' w-100 max-w-284 h-100' />
+            </div>
+            <div className="container_840" data-aos="flip-up">
                 <div className="social_card">
                     <div className="pt-5 position-relative z-3 pb_40">
                         <h1 className=" fw-semibold fs-48 lh-56 ff-sans text-white text-center mb-0">Our <span className=" primary-color">Socials</span></h1>
