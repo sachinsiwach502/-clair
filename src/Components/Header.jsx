@@ -8,7 +8,19 @@ import { useState } from 'react';
 
 function Header() {
     const [navIcon, setNavIcon] = useState(false);
-    const handleMenuIcon = () => { setNavIcon(!navIcon) }
+    const handleMenuIcon = () => {
+        setNavIcon(!navIcon)
+        let body = document.body;
+        body.classList.toggle("overflow-hidden");
+        let nav_links = document.querySelectorAll(".nav_links");
+        nav_links.forEach(n => {
+            n.addEventListener("click", () => {
+                setNavIcon(false);
+                body.classList.remove("overflow-hidden");
+            });
+        });
+    };
+
     return (
         <>
             <header className='header_bg_img min-vh-100 d-flex flex-column position-relative'>
