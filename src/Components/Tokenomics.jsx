@@ -22,27 +22,27 @@ function Tokenomics() {
                             <p className=' mb-0 black-300 ff-sans fw-medium fs-24 lh-35'>3%</p>
                             <p className=' mb-0 black-300 ff-sans fw-medium fs-16 lh-24'>Presale</p>
                         </div>
-                        <div className=" d-flex align-items-baseline gap_12 pt_12">
+                        <div className=" d-flex align-items-center gap_12 pt_12">
                             <span> <img src={arrow_img} alt="arrow icon" className='tokenomics_arrow' /></span>
                             <p className=' mb-0 black-300 ff-sans fw-medium fs-24 lh-35'>1%</p>
                             <p className=' mb-0 black-300 ff-sans fw-medium fs-16 lh-24'>Marketing</p>
                         </div>
-                        <div className=" d-flex align-items-baseline gap_12 pt_12">
+                        <div className=" d-flex align-items-center gap_12 pt_12">
                             <span> <img src={arrow_img} alt="arrow icon" className='tokenomics_arrow' /></span>
                             <p className=' mb-0 black-300 ff-sans fw-medium fs-24 lh-35'>5%</p>
                             <p className=' mb-0 black-300 ff-sans fw-medium fs-16 lh-24'>Team - locked for 24 months</p>
                         </div>
-                        <div className=" d-flex align-items-baseline gap_12 pt_12">
+                        <div className=" d-flex align-items-center gap_12 pt_12">
                             <span> <img src={arrow_img} alt="arrow icon" className='tokenomics_arrow' /></span>
                             <p className=' mb-0 black-300 ff-sans fw-medium fs-24 lh-35'>10%</p>
                             <p className=' mb-0 black-300 ff-sans fw-medium fs-16 lh-24'>Investors - locked for 24 months</p>
                         </div>
-                        <div className=" d-flex align-items-baseline gap_12 pt_12">
+                        <div className=" d-flex align-items-center gap_12 pt_12">
                             <span> <img src={arrow_img} alt="arrow icon" className='tokenomics_arrow' /></span>
                             <p className=' mb-0 black-300 ff-sans fw-medium fs-24 lh-35'>21%</p>
                             <p className=' mb-0 black-300 ff-sans fw-medium fs-16 lh-24'>Exchange listings & liquidity</p>
                         </div>
-                        <div className=" d-flex align-items-baseline gap_12 pt_12">
+                        <div className=" d-flex align-items-center gap_12 pt_12">
                             <span> <img src={arrow_img} alt="arrow icon" className='tokenomics_arrow' /></span>
                             <p className=' mb-0 black-300 ff-sans fw-medium fs-24 lh-35'>60%</p>
                             <p className=' mb-0 black-300 ff-sans fw-medium fs-16 lh-24'>Rewards and burns</p>
