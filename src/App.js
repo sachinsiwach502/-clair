@@ -11,8 +11,9 @@ import count_1 from './assets/img/svg/conut_down_1.svg';
 import count_2 from './assets/img/svg/conut_down_2.svg';
 import count_3 from './assets/img/svg/conut_down_3.svg';
 import count_4 from './assets/img/svg/conut_down_4.svg';
-import conunt_img from './assets/img/png/stocks_buyer.webp';
+import token_range from './assets/img/png/range_bar.png'
 import dino_ellifs from './assets/img/png/dino_ellips.png';
+import clock from './assets/img/png/clock_img.png';
 import AOS from 'aos';
 import "aos/dist/aos.css"
 import { useEffect } from 'react';
@@ -30,7 +31,7 @@ function App() {
     <body className=' bg-black'>
       <Header />
       <div className='countdown_container overflow-hidden'>
-        <div className='row justify-content-between countDown_card mt-lg-5 mt-md-4 mt-2'>
+        <div className='row justify-content-lg-between justify-content-center countDown_card mt-lg-5 mt-md-4 mt-2' id='cookies'>
           <div className=' col-md-5 d-md-block d-flex align-items-center justify-content-center' data-aos="fade-right">
             <div className='max-w-300 w-100'>
               <div className=' d-flex align-items-center gap-5'>
@@ -52,8 +53,55 @@ function App() {
               <button className='bttn w-100 mt-4 ff-sans fw-bold fs-16 lh-24 position-relative z-3'>Buy Now</button>
             </div>
           </div>
-          <div className=' col-md-6 mt-lg-0 mt-3' data-aos="fade-left">
-            <img src={conunt_img} alt="hero sec" className=' w-100' />
+          <div className=' col-md-6 mt-lg-0 mt-3 max-w-491' data-aos="fade-left">
+            {/* <img src={conunt_img} alt="hero sec" className=' w-100' /> */}
+            <div className=' d-flex align-items-center justify-content-between'>
+              <div className=' d-flex flex-column ps-3'>
+                <p className=' ff-sans mb-0 black-300  fw-normal fs-16 lh-24'>Tokens are Sold</p>
+                <p className=' ff-sans primary-color fs-16 lh-24 fw-bold ff-sans pt-1'>98,212,738</p>
+              </div>
+              <div className=' d-flex flex-column pe-3'>
+                <p className=' ff-sans mb-0 black-300  fw-normal fs-16 lh-24'>Tokens Remaining</p>
+                <p className=' ff-sans primary-color fs-16 lh-24 fw-bold ff-sans pt-1'>80,212,738</p>
+              </div>
+            </div>
+            <div className='token_range'>
+              <div className=''> <img src={token_range} alt="range bar " className=' w-100' /></div>
+              <p className=' ff-sans fs-14 lh-21 fw-normal black-200  mb-0 pt-1'>Purchase $Clair fast until the price increase.</p>
+            </div>
+            <div className=' d-flex align-items-center gap_30 justify-content-sm-between justify-content-center flex-sm-nowrap flex-wrap gap-3'>
+              <div className=' d-flex align-items-center gap_10'>
+                <img src={clock} alt="clock" className='w-24 h-24' />
+                <h4 className=' ff-sans fw-normal fs-16 lh-21 black-100 text-nowrap mb-0'>Price <br className=' d-sm-block d-none' />
+                  increase in </h4>
+              </div>
+              <div className=' d-flex align-items-center justify-content-between gap-2'>
+                <div className=' d-flex flex-column align-items-center gap_2'>
+                  <p className=' fs-14 ff-sans lh-21 fw-normal black-200 mb-0'>Days</p>
+                  <div className=' time_box'>
+                    <h1 className=' ff-sans fs-24 lh-35 text-white d-flex align-items-center justify-content-center mb-0'>00</h1>
+                  </div>
+                </div>
+                <div className=' d-flex flex-column align-items-center gap_2'>
+                  <p className=' fs-14 ff-sans lh-21 fw-normal black-200 mb-0'>Hours</p>
+                  <div className=' time_box'>
+                    <h1 className=' ff-sans fs-24 lh-35 text-white d-flex align-items-center justify-content-center mb-0'>12</h1>
+                  </div>
+                </div>
+                <div className=' d-flex flex-column align-items-center gap_2'>
+                  <p className=' fs-14 ff-sans lh-21 fw-normal black-200 mb-0'>Mins</p>
+                  <div className=' time_box'>
+                    <h1 className=' ff-sans fs-24 lh-35 text-white d-flex align-items-center justify-content-center mb-0'>46</h1>
+                  </div>
+                </div>
+                <div className=' d-flex flex-column align-items-center gap_2'>
+                  <p className=' fs-14 ff-sans lh-21 fw-normal black-200 mb-0'>Secs</p>
+                  <div className=' time_box'>
+                    <h1 className=' ff-sans fs-24 lh-35 text-white d-flex align-items-center justify-content-center mb-0'>19</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ function Roadmap() {
         <section className=" position-relative candleStickPattern pb_350 roadmap_bg_img pb-4 overflow-hidden" id="roadmap">
             <div className=" container_1140">
                 <h1 className=" mb-0 ff-sans text-center text-white fw-semibold fs-48 lh-56">Roadmap</h1>
-                <div className=" row align-items-lg-start align-items-center justify-content-center justify-content-lg-start position-relative z-3 mt-5">
+                <div className=" row align-items-lg-start align-items-center justify-content-center justify-content-lg-start position-relative z-3 mt_lg_100 mt_sm_70 mt-5">
                     <div className=" col-lg-4 mt_178 col-sm-6 d-flex align-items-center justify-content-center" data-aos="zoom-out-up">
                         <div className=" phase_card w-100">
                             <h3 className=" text-white fs-32 lh-49 fw-medium ff-sans">Phase 1</h3>

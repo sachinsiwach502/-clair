@@ -54,7 +54,7 @@ function Tokenomics() {
                 </div>
 
             </div>
-            <div className='community-card mt_lg_80 mt-md-5 mt-4' data-aos="zoom-in">
+            <div className='community-card mt_lg_80 mt-md-5 mt-4' data-aos="zoom-in" id='disclaimer'>
                 <div className=' d-flex align-items-center justify-content-center gap_75 gap-4 flex-wrap flex-lg-nowrap position-relative z-3'>
                     <div className=' d-flex align-items-center gap_20'>
                         <span className='img_card'>

@@ -12,15 +12,15 @@ function Footer() {
                             the crypto defender is here, armed with memes and ready to act.</p>
                     </div>
                     <div className=" d-flex align-items-center justify-content-center">
-                        <div className=" d-flex align-items-center gap_32 pt-5 overflow-auto w-lg-768 w-md-576 w-sm-320">
-                            <a href="#" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">About</a>
-                            <a href="#" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">Tokenomics</a>
-                            <a href="#" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">Audit</a>
-                            <a href="#" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">Roadmap</a>
-                            <a href="#" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">White Paper</a>
-                            <a href="#" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">Privacy</a>
-                            <a href="#" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">Cookies</a>
-                            <a href="#" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">Disclaimer</a>
+                        <div className=" d-flex align-items-center gap_32 pt-5 overflow-auto flex-wrap justify-content-center">
+                            <a href="#about" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">About</a>
+                            <a href="#tokenomics" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">Tokenomics</a>
+                            <a href="#aduit" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">Audit</a>
+                            <a href="#roadmap" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">Roadmap</a>
+                            <a href="#paper" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">White Paper</a>
+                            <a href="#secure" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">Privacy</a>
+                            <a href="#cookies" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">Cookies</a>
+                            <a href="#disclaimer" className=" black-100 fw-medium fs-16 lh-24 ff-sans footer_links text-nowrap">Disclaimer</a>
                         </div>
                     </div>
 

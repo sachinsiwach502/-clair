@@ -31,15 +31,15 @@ function Secure() {
                 </div>
 
                 <div className='yellowUnderline'></div>
-                <div className='contaier_1080'>
+                <div className='contaier_1080' id='secure'>
                     <div className='row pt_61 justify-content-between pb_150'>
                         <div className=' col-lg-5' data-aos="flip-up">
                             <p className=' mb-0 ff-sans fw-semibold fs-32 text-white text-lg-start text-center'>Listing on <span className=' primary-color'>Major Exchanges </span> </p>
                             <p className=' ff-sans mb-0 fw-normal fs-20 lh-30  black-300 text-lg-start text-center'>Baby Sinclair’s Team is in action to secure the <span className=' primary-color'>$CLAIR </span> listing on major exchanges. Exciting milestones ahead.</p>
                         </div>
                         <div className='col-lg-6 mt-lg-0 mt-2' data-aos="flip-down">
-                            <div className=' slider_box'>
-                                <div className=' d-flex align-items-center gap_32 overflow-auto position-relative z-3 slider_scroll'>
+                            <div className=' slider_box cursor-w-resize'>
+                                <div className=' d-flex align-items-center gap_lg_32 gap-md-4 gap-3 overflow-auto position-relative z-3 slider_scroll'>
                                     <span className='h-99 '>  <img src={slider_img_01} alt="slider img" className='w-267 h-100' /></span>
                                     <span className=' h-99 '>  <img src={slider_img_02} alt="slider img" className=' w-267 h-100' /></span>
                                     <span className=' h-99 '>  <img src={slider_img_03} alt="slider img" className=' w-267 h-100' /></span>

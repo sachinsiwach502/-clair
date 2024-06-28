@@ -368,8 +368,27 @@
 }
 
 /*================= nav bar =========================*/
+
+.token_range {
+  position: relative;
+  /* transform: translate(12px, -29px); */
+  top: -16%;
+}
+
 .gap_32 {
   gap: 32px;
+}
+
+.w-24 {
+  width: 24px;
+}
+
+.h-24 {
+  height: 24px;
+}
+
+.gap_2 {
+  gap: 2px;
 }
 
 .container_1140 {
@@ -738,9 +757,12 @@
 .slider_bigger_underline {
   border: 1px solid var(--primary-color);
   height: 1px;
-  max-width: 186px;
   width: 100%;
   opacity: 20%;
+}
+
+.cursor-w-resize {
+  cursor: w-resize;
 }
 
 .slider_smaller_underline {
@@ -764,12 +786,25 @@
   background-repeat: no-repeat;
 }
 
+.time_box {
+  width: 50px;
+  height: 40px;
+  border-radius: 4px;
+  background: rgba(255, 246, 36, 0.2);
+}
+
 
 /*=================== faq section ======================*/
 .accordion-item {
   border: 1px solid var(--border-color) !important;
   background: var(--background-color) !important;
   border-radius: 8px !important;
+}
+
+.accordion-body {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  padding-top: 0 !important;
 }
 
 .accordion-button:focus {
@@ -1087,6 +1122,11 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     z-index: 11;
+    cursor: pointer;
+  }
+
+  .slider_box {
+    padding: 30px 15px 15px 15px !important;
   }
 
   .menuIocn span {
@@ -1098,10 +1138,6 @@
 
   .show {
     left: 0;
-  }
-
-  .w-lg-768 {
-    width: 768px;
   }
 
   .countDown_card {
@@ -1118,9 +1154,7 @@
 }
 
 @media (max-width:768px) {
-  .w-md-576 {
-    width: 576px !important;
-  }
+
 
   .fs-md-40 {
     font-size: var(--fs-40) !important;
@@ -1140,9 +1174,7 @@
 }
 
 @media (max-width:576px) {
-  .w-sm-320 {
-    width: 320px !important;
-  }
+
 
   .countDown_card {
     padding: 15px;
@@ -1150,6 +1182,10 @@
 
   .mt_16 {
     margin-top: 16px;
+  }
+
+  .slider_box {
+    padding: 20px 15px 15px 15px !important;
   }
 
 }
@@ -1166,11 +1202,23 @@
   .pb_sm_70 {
     padding-bottom: 70px !important;
   }
+
+  .gap_30 {
+    gap: 30px !important;
+  }
+
+  .mt_sm_70 {
+    margin-top: 70px !important;
+  }
 }
 
 @media (min-width:992px) {
   .gap_75 {
     gap: 75px !important;
+  }
+
+  .mt_lg_100 {
+    margin-top: 100px !important;
   }
 
   .community-card {
@@ -1213,6 +1261,10 @@
     padding-bottom: 160px !important;
   }
 
+  .gap_lg_32 {
+    gap: 32px !important;
+  }
+
   .pb_lg_97 {
     padding-bottom: 97px !important;
   }
@@ -1220,4 +1272,6 @@
   .pb_350 {
     padding-bottom: 350px !important;
   }
+
+
 }
