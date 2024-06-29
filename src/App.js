@@ -21,6 +21,33 @@ import { useEffect } from 'react';
 
 
 function App() {
+  var countDownDate = new Date("Jul 5, 2024 15:37:25").getTime();
+
+  var x = setInterval(function () {
+
+    var now = new Date().getTime();
+
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("days").innerHTML = "00";
+      document.getElementById("hours").innerHTML = "00";
+      document.getElementById("minutes").innerHTML = "00";
+      document.getElementById("seconds").innerHTML = "00";
+    }
+  }, 1000);
+
+
   useEffect(() => {
     AOS.init({
       once: 'true',
@@ -32,72 +59,73 @@ function App() {
       <Header />
       <div className='countdown_container overflow-hidden'>
         <div className='row justify-content-lg-between justify-content-center countDown_card mt-lg-5 mt-md-4 mt-2' id='cookies'>
-          <div className=' col-md-5 d-md-block d-flex align-items-center justify-content-center' data-aos="fade-right">
+          <div className='col-md-5 d-md-block d-flex align-items-center justify-content-center' data-aos="fade-right">
             <div className='max-w-300 w-100'>
-              <div className=' d-flex align-items-center gap-5'>
-                <div className=' d-flex align-items-start flex-column'>
-                  <p className=' mb-0 ff-sans fw-normal fs-16 lh-24 black-300'>1 $Clair</p>
-                  <p className=' mb-0 fw-normal primary-color lh-24 fs-16 ff-sans'>0.00387 $</p>
+              <div className='d-flex align-items-center gap-5'>
+                <div className='d-flex align-items-start flex-column'>
+                  <p className='mb-0 ff-sans fw-normal fs-16 lh-24 black-300'>1 $Clair</p>
+                  <p className='mb-0 fw-normal primary-color lh-24 fs-16 ff-sans'>0.00387 $</p>
                 </div>
-                <div className=' d-flex align-items-start flex-column'>
-                  <p className=' mb-0 ff-sans fw-normal fs-16 lh-24 black-300'>Raised Amount</p>
-                  <p className=' mb-0 fw-normal primary-color lh-24 fs-16 ff-sans'>332,123$</p>
+                <div className='d-flex align-items-start flex-column'>
+                  <p className='mb-0 ff-sans fw-normal fs-16 lh-24 black-300'>Raised Amount</p>
+                  <p className='mb-0 fw-normal primary-color lh-24 fs-16 ff-sans'>332,123$</p>
                 </div>
               </div>
-              <div className=' d-flex align-items-center gap_10 pt-3 justify-content-between '>
-                <img src={count_1} alt="conunt" className=' curser position-relative z-3' />
-                <img src={count_2} alt="conunt" className=' curser position-relative z-3' />
-                <img src={count_3} alt="conunt" className=' curser position-relative z-3' />
-                <img src={count_4} alt="conunt" className=' curser position-relative z-3' />
+              <div className='d-flex align-items-center gap_10 pt-3 justify-content-between'>
+                <img src={count_1} alt="count" className='curser position-relative z-3' />
+                <img src={count_2} alt="count" className='curser position-relative z-3' />
+                <img src={count_3} alt="count" className='curser position-relative z-3' />
+                <img src={count_4} alt="count" className='curser position-relative z-3' />
               </div>
               <button className='bttn w-100 mt-4 ff-sans fw-bold fs-16 lh-24 position-relative z-3'>Buy Now</button>
             </div>
           </div>
-          <div className=' col-md-6 mt-lg-0 mt-3 max-w-491' data-aos="fade-left">
-            {/* <img src={conunt_img} alt="hero sec" className=' w-100' /> */}
-            <div className=' d-flex align-items-center justify-content-between'>
-              <div className=' d-flex flex-column ps-3'>
-                <p className=' ff-sans mb-0 black-300  fw-normal fs-16 lh-24'>Tokens are Sold</p>
-                <p className=' ff-sans primary-color fs-16 lh-24 fw-bold ff-sans pt-1'>98,212,738</p>
+          <div className='col-md-6 mt-lg-0 mt-3 max-w-491' data-aos="fade-left">
+            <div className='d-flex align-items-center justify-content-between'>
+              <div className='d-flex flex-column ps-3'>
+                <p className='ff-sans mb-0 black-300 fw-normal fs-16 lh-24'>Tokens are Sold</p>
+                <p className='ff-sans primary-color fs-16 lh-24 fw-bold ff-sans pt-1'>98,212,738</p>
               </div>
-              <div className=' d-flex flex-column pe-3'>
-                <p className=' ff-sans mb-0 black-300  fw-normal fs-16 lh-24'>Tokens Remaining</p>
-                <p className=' ff-sans primary-color fs-16 lh-24 fw-bold ff-sans pt-1'>80,212,738</p>
+              <div className='d-flex flex-column pe-3'>
+                <p className='ff-sans mb-0 black-300 fw-normal fs-16 lh-24'>Tokens Remaining</p>
+                <p className='ff-sans primary-color fs-16 lh-24 fw-bold ff-sans pt-1'>80,212,738</p>
               </div>
             </div>
             <div className='token_range'>
-              <div className=''> <img src={token_range} alt="range bar " className=' w-100' /></div>
-              <p className=' ff-sans fs-14 lh-21 fw-normal black-200  mb-0 pt-1'>Purchase $Clair fast until the price increase.</p>
+              <div className=''>
+                <img src={token_range} alt="range bar" className='w-100' />
+              </div>
+              <p className='ff-sans fs-14 lh-21 fw-normal black-200 mb-0 pt-1'>Purchase $Clair fast until the price increase.</p>
             </div>
-            <div className=' d-flex align-items-center gap_30 justify-content-sm-between justify-content-center flex-sm-nowrap flex-wrap gap-3'>
-              <div className=' d-flex align-items-center gap_10'>
+            <div className='d-flex align-items-center gap_30 justify-content-sm-between justify-content-center flex-sm-nowrap flex-wrap gap-3'>
+              <div className='d-flex align-items-center gap_10'>
                 <img src={clock} alt="clock" className='w-24 h-24' />
-                <h4 className=' ff-sans fw-normal fs-16 lh-21 black-100 text-nowrap mb-0'>Price <br className=' d-sm-block d-none' />
+                <h4 className='ff-sans fw-normal fs-16 lh-21 black-100 text-nowrap mb-0'>Price <br className='d-sm-block d-none' />
                   increase in </h4>
               </div>
-              <div className=' d-flex align-items-center justify-content-between gap-2'>
-                <div className=' d-flex flex-column align-items-center gap_2'>
-                  <p className=' fs-14 ff-sans lh-21 fw-normal black-200 mb-0'>Days</p>
-                  <div className=' time_box'>
-                    <h1 className=' ff-sans fs-24 lh-35 text-white d-flex align-items-center justify-content-center mb-0'>00</h1>
+              <div className='d-flex align-items-center justify-content-between gap-2'>
+                <div className='d-flex flex-column align-items-center gap_2'>
+                  <p className='fs-14 ff-sans lh-21 fw-normal black-200 mb-0'>Days</p>
+                  <div className='time_box'>
+                    <h1 className='ff-sans fs-24 lh-35 text-white d-flex align-items-center justify-content-center mb-0' id='days'>00</h1>
                   </div>
                 </div>
-                <div className=' d-flex flex-column align-items-center gap_2'>
-                  <p className=' fs-14 ff-sans lh-21 fw-normal black-200 mb-0'>Hours</p>
-                  <div className=' time_box'>
-                    <h1 className=' ff-sans fs-24 lh-35 text-white d-flex align-items-center justify-content-center mb-0'>12</h1>
+                <div className='d-flex flex-column align-items-center gap_2'>
+                  <p className='fs-14 ff-sans lh-21 fw-normal black-200 mb-0'>Hours</p>
+                  <div className='time_box'>
+                    <h1 className='ff-sans fs-24 lh-35 text-white d-flex align-items-center justify-content-center mb-0' id='hours'>12</h1>
                   </div>
                 </div>
-                <div className=' d-flex flex-column align-items-center gap_2'>
-                  <p className=' fs-14 ff-sans lh-21 fw-normal black-200 mb-0'>Mins</p>
-                  <div className=' time_box'>
-                    <h1 className=' ff-sans fs-24 lh-35 text-white d-flex align-items-center justify-content-center mb-0'>46</h1>
+                <div className='d-flex flex-column align-items-center gap_2'>
+                  <p className='fs-14 ff-sans lh-21 fw-normal black-200 mb-0'>Mins</p>
+                  <div className='time_box'>
+                    <h1 className='ff-sans fs-24 lh-35 text-white d-flex align-items-center justify-content-center mb-0' id='minutes'>46</h1>
                   </div>
                 </div>
-                <div className=' d-flex flex-column align-items-center gap_2'>
-                  <p className=' fs-14 ff-sans lh-21 fw-normal black-200 mb-0'>Secs</p>
-                  <div className=' time_box'>
-                    <h1 className=' ff-sans fs-24 lh-35 text-white d-flex align-items-center justify-content-center mb-0'>19</h1>
+                <div className='d-flex flex-column align-items-center gap_2'>
+                  <p className='fs-14 ff-sans lh-21 fw-normal black-200 mb-0'>Secs</p>
+                  <div className='time_box'>
+                    <h1 className='ff-sans fs-24 lh-35 text-white d-flex align-items-center justify-content-center mb-0' id='seconds'>19</h1>
                   </div>
                 </div>
               </div>
